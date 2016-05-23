@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Character Sets | Green9&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="HTML Encoding(Character Sets)为了正确显示Html网页，需要指定使用的字符集(character set / character encoding)。
+
+ASCII
+ANSIANSI(Windows-1252)是Windows默认的字符集，因此所有的浏览器都支持。其控制字符(0-31、127)为控制硬件设备而设计，其在HTML文件中不起作用。
+ISO-8859-1HTM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Character Sets">
+<meta property="og:url" content="http://green9.xyz/2016/05/23/character-sets/index.html">
+<meta property="og:site_name" content="Green9's Blog">
+<meta property="og:description" content="HTML Encoding(Character Sets)为了正确显示Html网页，需要指定使用的字符集(character set / character encoding)。
+
+ASCII
+ANSIANSI(Windows-1252)是Windows默认的字符集，因此所有的浏览器都支持。其控制字符(0-31、127)为控制硬件设备而设计，其在HTML文件中不起作用。
+ISO-8859-1HTM">
+<meta property="og:updated_time" content="2016-05-23T03:00:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Character Sets">
+<meta name="twitter:description" content="HTML Encoding(Character Sets)为了正确显示Html网页，需要指定使用的字符集(character set / character encoding)。
+
+ASCII
+ANSIANSI(Windows-1252)是Windows默认的字符集，因此所有的浏览器都支持。其控制字符(0-31、127)为控制硬件设备而设计，其在HTML文件中不起作用。
+ISO-8859-1HTM">
+  
+    <link rel="alternate" href="/atom.xml" title="Green9&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Green9&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">To Be A Runner!</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://green9.xyz"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-character-sets" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/23/character-sets/" class="article-date">
+  <time datetime="2016-05-23T01:51:18.000Z" itemprop="datePublished">2016-05-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Character Sets
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HTML-Encoding-Character-Sets"><a href="#HTML-Encoding-Character-Sets" class="headerlink" title="HTML Encoding(Character Sets)"></a>HTML Encoding(Character Sets)</h1><p>为了正确显示Html网页，需要指定使用的字符集(character set / character encoding)。</p>
+<ul>
+<li><a href="http://www.w3schools.com/charsets/ref_html_ascii.asp" target="_blank" rel="external">ASCII</a></li>
+<li><a href="http://www.w3schools.com/charsets/ref_html_ansi.asp" target="_blank" rel="external">ANSI</a><br>ANSI(Windows-1252)是Windows默认的字符集，因此所有的浏览器都支持。<br>其控制字符(0-31、127)为控制硬件设备而设计，其在HTML文件中不起作用。</li>
+<li>ISO-8859-1<br>HTML4默认的字符编码为ISO-8859-1。<br>当浏览器探测到网页为ISO-8859-1时，通常将其转化为ANSI，因为它俩挺相近哒，只有32个（128-159）character不同，具体不同瞅<a href="http://www.w3schools.com/charsets/ref_html_ansi.asp" target="_blank" rel="external">这里</a>的Important Note部分。这一条在HTML5、XHTML也试用哦。</li>
+<li>UTF-8(Unicode)<br>HTML5默认的字符编码为UTF-8(Unicode)</li>
+</ul>
+<h1 id="HTML的charset属性"><a href="#HTML的charset属性" class="headerlink" title="HTML的charset属性"></a>HTML的charset属性</h1><p>使用<meta>标签指定字符集</p>
+<ul>
+<li><p>HTML4</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=ISO-8859-1"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Html5</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://green9.xyz/2016/05/23/character-sets/" data-id="ciojdh3450001exqb0jtdvrgb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/22/域名-GitHub/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">域名+GitHub</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/">web</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/web/" style="font-size: 20px;">web</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/23/character-sets/">Character Sets</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/22/域名-GitHub/">域名+GitHub</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/22/hexo/">使用Hexo搭建一个blog</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Green9<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
