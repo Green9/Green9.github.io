@@ -31,7 +31,7 @@ Node.js
 
 
 安装">
-<meta property="og:updated_time" content="2016-05-22T14:08:54.000Z">
+<meta property="og:updated_time" content="2016-05-23T06:08:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建一个blog">
 <meta name="twitter:description" content="用Hexo搭建一个网站,开启炫酷生活每一天，(≖ ‿ ≖)✧
@@ -141,6 +141,9 @@ Node.js
 <li>生成一个ssh key,并加入到你的GitHub中，<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">瞅这里</a></li>
 </ol>
 <h1 id="同步内容到GitHub"><a href="#同步内容到GitHub" class="headerlink" title="同步内容到GitHub"></a>同步内容到GitHub</h1><ol>
+<li><p>安装插件</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>在<code>yourblog</code>文件夹中的<code>_config.yml</code>文件中添加以下内容</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yourName/yourName.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message:</span><br></pre></td></tr></table></figure>
 </li>
@@ -156,7 +159,7 @@ Node.js
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://green9.xyz/2016/05/22/hexo/" data-id="ciojj1x260001neqbezupfewy" class="article-share-link">Share</a>
+      <a data-url="http://green9.xyz/2016/05/22/hexo/" data-id="ciojm4bvd0000udqb926alass" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -203,7 +206,7 @@ Node.js
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/web/" style="font-size: 20px;">web</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/web/" style="font-size: 20px;">web</a>
     </div>
   </div>
 
@@ -223,6 +226,10 @@ Node.js
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/05/23/HTML-Content-categories/">HTML: Content categories</a>
+          </li>
         
           <li>
             <a href="/2016/05/23/character-sets/">Character Sets</a>
